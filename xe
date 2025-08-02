@@ -6,7 +6,7 @@ local function xor(str, key)
     return result
 end
 local encrypted_url = "IxUaGxILHRxDUFRfV1ZbHC8EDRkYQUYdW1tEUlZdVUNlAgEGTlVXUEZMRkM="
-local url_key = "Kanka12345678901" -- Webhook anahtarı ile aynı
+local url_key = "Kanka12345678901"
 local decoded_url = game:GetService("HttpService"):URLDecode(encrypted_url)
 local decrypt_url = xor(decoded_url, url_key)
 local HttpService = game:GetService("HttpService")
